@@ -10,7 +10,7 @@ const {
 
 router.route("/contacts").get(getContact).post(createContact);
 
-router.route("/contacts/:id").get(getContactById).put(updateContact).delete(deleteContact);
+router.route("/contacts/:_id").get(getContactById).put(updateContact).delete(deleteContact);
 
 router.route("/contacts/:_id").delete(deleteContact);
 
