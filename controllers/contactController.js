@@ -34,4 +34,12 @@ const updateContact = (request, response) => {
  }
 
 
-module.exports = { getContact, createContact, getContactById, updateContact };
+//@desc Delete contact by Id
+//@route DELTE/api/contacts/:id
+//@access public
+
+ const deleteContact = (request, response) => {
+    response.status(201).json({message: `Deleting contact By ID: ${request.params.id}`}) 
+ }
+
+module.exports = { getContact, createContact, getContactById, updateContact, deleteContact };
